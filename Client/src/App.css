@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    font-family: "Roboto Mono", monospace;
+}
+.posts{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    
+}
+.post{
+    display: flex;
+    justify-content:space-between;
+    gap: 100px  ;
+    &:nth-child(2n){
+        flex-direction: row-reverse;
+    }
+    button{
+        border-radius: 0%;
+        width: max-content;
+    }
+}
+.image{
+    flex: 2;
+    position: relative;
+    
+    img{
+        width: 100%;
+        object-fit: cover;
+        max-height: 400px;
+    }
+}
+.bttom{
+    flex:3;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-decoration: none;
+    a{
+        text-decoration: none ;
+        color: black;
+    }
+}
+.header{
+    button{
+        border-radius: 0%;
+    }
+}
+
+.mainPost{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    .content{
+        .postimage{
+
+            img{
+            width: 100%;
+            height: 300px;
+            }
+        }
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        .options{
+            display: flex;
+            justify-content: space-between;
+            .prosec{
+                display: flex;
+                gap: 20px;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .edits{
+                display: flex;
+                gap: 20px;
+                svg{
+                    width: 25px;
+                    height: 25px;
+                }
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+    .sug{
+        flex: 2;
+    }
+}
