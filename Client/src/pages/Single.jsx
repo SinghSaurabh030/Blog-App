@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SingleSider from "../components/SingleSider";
 
 function Single() {
     return (  
@@ -48,7 +49,7 @@ function Single() {
                         </p>
                     </div>
                 </div>
-                <div className="sug">s</div>
+                <SingleSider/>
             </div>
         </div>
         </>
